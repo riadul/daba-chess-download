@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daba Chess (দাবা, Shatranj): chess with funny cartoon 3D fighters</title>
+<meta name="description" content="Daba Chess (দাবা, shatranj, शतरंज, شطرنج), chess with a cartoon 3D army where every capture is a funny little fight. Chess was born in South Asia as chaturanga. Play the computer at 5 levels, a friend on one device or online by room code. Android, Windows, Linux and in the browser. Free, offline, no ads. By Abacus IT.">
+<meta name="keywords" content="chess, daba, daba chess, dabā, daba khela, bangla chess, shatranj, satranj, shatranj game, chaturanga, chaturangam, chadurangam, sathurangam, buddhibal, buddhichal, chess game, 3d chess, cartoon chess, battle pieces, board game, two player, offline, bangladesh, india, nepal, pakistan, sri lanka, দাবা, দাবা খেলা, দাবার ঘুঁটি, শতরঞ্জ, চতুরঙ্গ, দবা, शतरंज, शतरंज खेल, चतुरंग, बुद्धिबळ, बुद्धिचाल, شطرنج, شطرنج کا کھیل, શતરંજ, ਸ਼ਤਰੰਜ, ଶତରଞ୍ଜ, சதுரங்கம், చదరంగం, ಚದುರಂಗ, ചതുരംഗം, චෙස්">
+<meta property="og:title" content="Daba Chess (দাবা)">
+<meta property="og:description" content="Chess with funny cartoon 3D fighters: every capture is a little fight. Free, offline, no ads.">
+<meta property="og:image" content="cover-en.png">
+<link rel="icon" href="icon.svg">
+<style>
+@font-face { font-family: "Baloo Da 2"; src: url("BalooDa2.ttf") format("truetype"); font-weight: 400 800; font-display: swap; }
+:root { --ink: #3b2412; --card: #fffaf0; --go: #2fbf71; --go-d: #1f8f52; --b1: #ff8a3d; --b1-d: #d2601a; --brown: #a7623a; --rust: #b4501c; --b2: #4aa8ff; --b2-d: #2577c9; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Baloo Da 2", "Noto Sans Bengali", system-ui, sans-serif; color: var(--ink); background: linear-gradient(#fff1d6, #f6deaf 60%, #e9c48f) fixed; }
+.wrap { max-width: 1000px; margin: 0 auto; padding: 18px 16px 40px; }
+header { display: flex; align-items: center; gap: 14px; }
+header img { width: 64px; height: 64px; }
+h1 { margin: 0; font-size: 40px; color: var(--rust); line-height: 1; }
+.tag { margin: 2px 0 0; opacity: .75; }
+.lang { margin-left: auto; background: #fff; border: 0; border-radius: 12px; padding: 6px 14px; font: inherit; font-weight: 700; cursor: pointer; box-shadow: 0 3px 0 #ead9b8; }
+.cover { width: 100%; border-radius: 22px; margin: 18px 0; box-shadow: 0 10px 30px rgba(80,40,10,.25); display: block; }
+.btns { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 10px 0 24px; }
+.btns a { display: block; text-decoration: none; color: #fff; font-weight: 800; font-size: 19px; text-align: center; border-radius: 18px; padding: 12px 10px 14px; }
+.btns small { display: block; font-size: 13px; font-weight: 500; opacity: .9; }
+.play { background: var(--go); box-shadow: 0 5px 0 var(--go-d); }
+.and { background: var(--b1); box-shadow: 0 5px 0 var(--b1-d); }
+.win, .lin { background: var(--b2); box-shadow: 0 5px 0 var(--b2-d); }
+.deb { background: var(--brown); box-shadow: 0 5px 0 #7a4426; }
+.shots { display: flex; gap: 12px; overflow-x: auto; padding-bottom: 6px; }
+.shots img { height: 420px; border-radius: 18px; box-shadow: 0 6px 18px rgba(80,40,10,.2); }
+.card { background: var(--card); border-radius: 22px; padding: 18px 22px; margin: 18px 0; box-shadow: 0 5px 0 rgba(120,70,20,.15); }
+.card h2 { margin: 0 0 6px; } .card ul { margin: 6px 0; padding-left: 22px; line-height: 1.6; }
+footer { display: flex; align-items: center; gap: 10px; justify-content: center; margin-top: 26px; opacity: .85; }
+footer img { width: 40px; height: 40px; } footer a { color: inherit; }
+body.en [data-l="bn"], body.bn [data-l="en"] { display: none !important; }
+</style>
+</head>
+<body class="en">
+<div class="wrap">
+  <header>
+    <img src="icon.svg" alt="">
+    <div><h1><span data-l="en">Daba Chess</span><span data-l="bn">দাবা</span></h1>
+      <p class="tag"><span data-l="en">দাবা · Shatranj · chess with funny cartoon 3D fighters</span><span data-l="bn">মজার কার্টুন যোদ্ধাদের দাবা, রঙিন ত্রিমাত্রিক রূপে</span></p></div>
+    <button class="lang" id="lang">বাংলা</button>
+  </header>
+  <img class="cover" data-l="en" src="cover-en.png" alt="Daba Chess">
+  <img class="cover" data-l="bn" src="cover-bn.png" alt="দাবা">
+  <div class="btns">
+    <a class="play" href="play/"><span data-l="en">▶ Play in the browser</span><span data-l="bn">▶ ব্রাউজারে খেলো</span><small data-l="en">iPhone, iPad, any computer</small><small data-l="bn">আইফোন, আইপ্যাড, যেকোনো কম্পিউটার</small></a>
+    <a class="and" href="https://github.com/riadul/daba-chess-download/releases/latest/download/DabaChess.apk"><span data-l="en">Android (APK)</span><span data-l="bn">অ্যান্ড্রয়েড (APK)</span><small>Android 8+</small></a>
+    <a class="win" href="https://github.com/riadul/daba-chess-download/releases/latest/download/DabaChess-Setup-x64.exe"><span data-l="en">Windows</span><span data-l="bn">উইন্ডোজ</span><small>Windows 10 / 11</small></a>
+    <a class="lin" href="https://snapcraft.io/daba-chess"><span data-l="en">Linux (Snap Store)</span><span data-l="bn">লিনাক্স (স্ন্যাপ স্টোর)</span><small>sudo snap install daba-chess</small></a>
+    <a class="deb" href="https://github.com/riadul/daba-chess-download/releases/latest"><span data-l="en">Linux (AppImage, .deb)</span><span data-l="bn">লিনাক্স (AppImage, .deb)</span><small>DabaChess-1.0.0-linux-x86_64.AppImage · daba-chess_1.0.0_amd64.deb</small></a>
+  </div>
+  <div class="shots" data-l="en"><img src="en-03-fight.jpg" alt=""><img src="en-02-game.jpg" alt=""><img src="en-04-checkmate.jpg" alt=""><img src="en-05-lesson.jpg" alt=""></div>
+  <div class="shots" data-l="bn"><img src="bn-03-fight.jpg" alt=""><img src="bn-02-game.jpg" alt=""><img src="bn-04-checkmate.jpg" alt=""><img src="bn-05-lesson.jpg" alt=""></div>
+  <div class="card" data-l="en">
+    <h2>Chess came home, and it brought a cartoon army</h2>
+    <p>Chess was born in South Asia about one and a half thousand years ago as chaturanga, the four parts of an army: foot soldiers, horses, elephants and chariots. In Bangladesh it is daba, in India and Pakistan shatranj. Daba Chess keeps the full rules and gives every piece a funny cartoon character: the raja, the mantri (minister), the boat, the elephant, the horse and the little soldiers.</p>
+    <ul>
+      <li>Every capture is a short, funny fight: the soldier pokes with his spear, the horse rears and stamps, the elephant trumpets and charges, the boat fires its tiny cannon, the minister spins with her fan, the king bonks with his sceptre</li>
+      <li>Full chess rules: castling, en passant, promotion with a choice of piece, check, checkmate and every draw rule</li>
+      <li>Play the computer at 5 levels, from Beginner to Expert, or a friend on the same device</li>
+      <li>Online play with a friend by room code</li>
+      <li>10 step-by-step lessons on the real board, ideal for children and beginners</li>
+      <li>A village courtyard, a palace terrace and a sunset field; fights Full, Short or Off</li>
+      <li>Profiles, statistics as white and as black, match history; saved after every move; undo, hints and a move list</li>
+      <li>Free, fully offline, no ads, no account, no data collected; Bangla and English</li>
+    </ul>
+    <h2>How to play</h2>
+    <p>White moves first, then the players take turns, one move each. Attack the other king so that it cannot escape in any way: that is checkmate, and the game is won. The lessons in the game teach every piece step by step.</p>
+  </div>
+  <div class="card" data-l="bn">
+    <h2>দাবা, এবার মজার কার্টুন যোদ্ধাদের সাথে</h2>
+    <p>দাবার জন্ম আমাদের এই উপমহাদেশেই, প্রায় দেড় হাজার বছর আগে, চতুরঙ্গ নামে: পদাতিক, ঘোড়া, হাতি আর রথ, সেনাবাহিনীর চার অঙ্গ। এই খেলায় দাবার সব নিয়মই আছে, আর প্রতিটি ঘুঁটি একেকটা মজার কার্টুন চরিত্র: রাজা, মন্ত্রী, নৌকা, হাতি, ঘোড়া আর বোড়ে।</p>
+    <ul>
+      <li>প্রতিটি খাওয়া মানে একটা মজার লড়াই: বোড়ের বর্শা, ঘোড়ার লাফ, হাতির শুঁড় তুলে ডাক, নৌকার ছোট্ট কামান, মন্ত্রীর পাখার বাতাস, রাজার রাজদণ্ডের বাড়ি</li>
+      <li>দাবার সব নিয়ম: ক্যাসলিং, আঁপাসাঁ, পদোন্নতিতে পছন্দের ঘুঁটি, কিস্তি, কিস্তিমাত আর ড্রয়ের সব নিয়ম</li>
+      <li>কম্পিউটারের সাথে ৫টি স্তর, নতুন থেকে ওস্তাদ পর্যন্ত, অথবা একই ফোনে বন্ধুর সাথে</li>
+      <li>রুম কোড দিয়ে বন্ধুর সাথে অনলাইন খেলা</li>
+      <li>আসল বোর্ডে ধাপে ধাপে ১০টি পাঠ, ছোটদের আর নতুনদের জন্য</li>
+      <li>গ্রামের উঠোন, রাজবাড়ির ছাদ আর গোধূলি; লড়াই পুরো, ছোট বা বন্ধ</li>
+      <li>নিজের প্রোফাইল, সাদা আর কালো হিসেবে আলাদা হিসাব, খেলার ইতিহাস; প্রতিটি চালে সেভ; ফেরত, পরামর্শ আর চালের তালিকা</li>
+      <li>সম্পূর্ণ ফ্রি, পুরোপুরি অফলাইন, কোনো বিজ্ঞাপন নেই, অ্যাকাউন্ট লাগে না; বাংলা আর ইংরেজি</li>
+    </ul>
+    <h2>কীভাবে খেলবে</h2>
+    <p>সাদা আগে চালে, তারপর পালা করে একটি করে চাল। প্রতিপক্ষের রাজাকে এমনভাবে আক্রমণ করো যেন সে কোনোভাবেই বাঁচতে না পারে: এটাই কিস্তিমাত, আর খেলা জেতা। খেলার ভেতরের পাঠে প্রতিটি ঘুঁটির চাল ধাপে ধাপে শেখানো আছে।</p>
+  </div>
+  <p class="tag" style="font-size:13px">Also known as: chess, daba, daba chess, dabā, daba khela, bangla chess, shatranj, satranj, shatranj game, chaturanga, chaturangam, chadurangam, sathurangam, buddhibal, buddhichal, chess game, 3d chess, cartoon chess, battle pieces, board game, two player, offline, bangladesh, india, nepal, pakistan, sri lanka, দাবা, দাবা খেলা, দাবার ঘুঁটি, শতরঞ্জ, চতুরঙ্গ, দবা, शतरंज, शतरंज खेल, चतुरंग, बुद्धिबळ, बुद्धिचाल, شطرنج, شطرنج کا کھیل, શતરંજ, ਸ਼ਤਰੰਜ, ଶତରଞ୍ଜ, சதுரங்கம், చదరంగం, ಚದುರಂಗ, ചതുരംഗം, චෙස්</p>
+  <footer><img src="abacus-it.svg" alt="Abacus IT"><span><span data-l="en">Published by Abacus IT</span><span data-l="bn">প্রকাশক: অ্যাবাকাস আইটি</span> · <a href="https://abacusitbd.com">abacusitbd.com</a> · info@abacusitbd.com</span></footer>
+</div>
+<script>
+// Bangla for Bangla devices or Bangladesh's time zone, English elsewhere (same rule as the game); the button switches.
+function detect() {
+  try {
+    const langs = [...(navigator.languages || []), navigator.language].filter(Boolean).map((l) => l.toLowerCase());
+    if (langs.some((l) => l.startsWith("bn"))) return "bn";
+    const tz = Intl.DateTimeFormat().resolvedOptions().timeZone || "";
+    if (tz === "Asia/Dhaka" || tz === "Asia/Dacca") return "bn";
+  } catch (e) {}
+  return "en";
+}
+function set(l) {
+  document.body.className = l; document.documentElement.lang = l;
+  document.getElementById("lang").textContent = l === "bn" ? "English" : "বাংলা";
+  try { localStorage.setItem("dc.site.lang", l); } catch (e) {}
+}
+let saved = null; try { saved = localStorage.getItem("dc.site.lang"); } catch (e) {}
+set(saved || detect());
+document.getElementById("lang").onclick = () => set(document.body.className === "bn" ? "en" : "bn");
+</script>
+</body>
+</html>

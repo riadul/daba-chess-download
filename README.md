@@ -24,7 +24,7 @@ character: the raja, the mantri (minister), the boat, the elephant, the horse an
 - Every capture is a short, funny fight (Full, Short or Off in Settings; a tap skips it)
 - Full chess rules: castling, en passant, promotion with a choice of piece, check, checkmate and every draw rule
 - Play the computer at 5 levels (Beginner, Easy, Medium, Hard, Expert), or a friend on one device
-- Online play with a friend by room code (switching on very soon)
+- Online play with a friend by room code
 - 10 step-by-step lessons; a village courtyard, a palace terrace and a sunset field
 - Profiles, statistics as white and as black, match history; saved after every move; undo, hints and a move list
 - Fully offline, no ads, no account, no data collected; Bangla and English
@@ -49,7 +49,7 @@ cannot escape in any way: that is checkmate, and the game is won.
 
 - রাজা, মন্ত্রী, নৌকা, হাতি, ঘোড়া আর বোড়ে, আর প্রতিটি খাওয়া মানে একটা মজার লড়াই
 - কম্পিউটারের সাথে ৫টি স্তর (নতুন, সহজ, মাঝারি, কঠিন, ওস্তাদ), অথবা একই ফোনে বন্ধুর সাথে
-- রুম কোড দিয়ে বন্ধুর সাথে অনলাইন খেলা (খুব শিগগিরই চালু হবে)
+- রুম কোড দিয়ে বন্ধুর সাথে অনলাইন খেলা
 - আসল বোর্ডে ধাপে ধাপে ১০টি পাঠ; নিজের প্রোফাইল, হিসাব আর খেলার ইতিহাস
 
 **কীভাবে খেলবে:** সাদা আগে চালে, তারপর পালা করে একটি করে চাল। প্রতিপক্ষের রাজাকে এমনভাবে আক্রমণ করো যেন সে কোনোভাবেই

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <rect x="4" y="4" width="120" height="120" rx="28" fill="#a7623a"/>
+  <g fill="#f6deaf">
+    <rect x="14" y="14" width="25" height="25"/><rect x="64" y="14" width="25" height="25"/>
+    <rect x="39" y="39" width="25" height="25"/><rect x="89" y="39" width="25" height="25"/>
+    <rect x="14" y="64" width="25" height="25"/><rect x="64" y="64" width="25" height="25"/>
+    <rect x="39" y="89" width="25" height="25"/><rect x="89" y="89" width="25" height="25"/>
+  </g>
+  <rect x="14" y="14" width="100" height="100" fill="none" stroke="#6e3b1f" stroke-width="3"/>
+  <!-- a cartoon king -->
+  <g stroke="#2a1a10" stroke-width="3" stroke-linejoin="round">
+    <ellipse cx="64" cy="112" rx="34" ry="8" fill="#fff6e2"/>
+    <path d="M36 110 Q36 70 64 66 Q92 70 92 110 Z" fill="#2f8de4"/>
+    <circle cx="64" cy="54" r="21" fill="#f0b98a"/>
+    <path d="M44 34 L48 18 L56 28 L64 14 L72 28 L80 18 L84 34 Z" fill="#ffcf33"/>
+    <rect x="44" y="30" width="40" height="8" rx="2" fill="#ffcf33"/>
+    <path d="M47 62 Q56 58 64 63 Q72 58 81 62 Q74 70 64 66 Q54 70 47 62 Z" fill="#3a2416"/>
+  </g>
+  <circle cx="56" cy="51" r="5" fill="#fff" stroke="#2a1a10" stroke-width="2"/><circle cx="72" cy="51" r="5" fill="#fff" stroke="#2a1a10" stroke-width="2"/>
+  <circle cx="57" cy="52" r="2.5" fill="#2a1a10"/><circle cx="73" cy="52" r="2.5" fill="#2a1a10"/>
+  <circle cx="64" cy="33" r="3" fill="#e8453c"/>
+</svg>
